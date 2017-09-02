@@ -1,0 +1,5 @@
+*.pyc
+files/
+db.sqlite3
+.idea/
+02.jpg
