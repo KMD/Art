@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'artwork',
+    'rest_framework',
 ]
 
 MIDDLEWARE_CLASSES = [
@@ -52,6 +53,13 @@ MIDDLEWARE_CLASSES = [
 ]
 
 ROOT_URLCONF = 'artistblog.urls'
+
+REST_FRAMEWORK = {
+    'DEFAULT_PERMISSION_CLASSES': [
+        'rest_framework.permissions.IsAdminUser',
+    ],
+    'PAGE_SIZE': 10
+}
 
 TEMPLATES = [
     {
